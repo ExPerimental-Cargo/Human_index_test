@@ -1,0 +1,169 @@
+html, body, p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "minion-pro-caption", "agchoijeongho-screen", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3a5b9b;
+  line-height: 1.2;
+  scrollbar-width: none;
+}
+
+
+/* body {
+  user-select: none;
+} */
+
+
+#hint {
+  width: 100%;
+  padding: 24px 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+
+::selection {
+  color: #fff;
+  background-color: #3a5b9b;
+}
+
+#floatingImage {
+  position: fixed;
+  z-index: 9999;
+  width: 15vw;
+  transition: transform 0.5s ease-in-out;
+  mix-blend-mode: multiply;
+}
+
+.human-gallery {
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.human-gallery-image {
+  width: 15vw;
+  height: fit-content;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: auto;
+}
+
+.human-gallery-image.active {
+  opacity: 1;
+}
+
+.fit-m {
+  width: 40vw;
+}
+
+.fit-s {
+  width: 30vw;
+}
+
+.desc-container {
+  display: flex;
+  width: 80vw;
+  gap: 48px;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 48px;
+  height: 100%;
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 64px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
+}
+
+.index-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 20vw;
+}
+
+.desc-contents {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.desc-img {
+  display: flex;
+}
+
+
+
+
+@media all and (max-width:720px) {
+  
+  #header {
+    padding: 24px;
+  }
+
+  .human-gallery-image {
+    width: 50vw;
+  }
+
+  .fit-m {
+    width: 70vw;
+  }
+
+  .m-opt {
+    transform: rotate(90deg);
+    width: 60vh;
+  }
+
+  .index-desc {
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .desc-container {
+    width: auto;
+    padding: 0 24px;
+  }
+
+  .img-container {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 24px;
+  }
+
+  .desc-img {
+    width: 30%;
+    padding-left: 24px;
+  }
+
+  .desc-contents {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 24px;
+  }
+
+  .comment-container {
+    padding: 24px;
+  }
+
+  #floatingImage {
+    width: 30vw;
+  }
+
+}
