@@ -43,10 +43,9 @@ button span:hover {
 }
 
 .main-desc {
+  width: calc(50% - 48px);
   padding: 128px 24px 48px 24px;
-  word-spacing: 0.05em;
-  column-count: 2;
-  column-gap: 48px;
+  column-count: 1;
   word-break: keep-all;
 }
 
@@ -59,7 +58,7 @@ button span:hover {
 }
 
 .indent {
-  text-indent: 64px;
+  text-indent: 32px;
 }
 
 .list-wrapper {
@@ -112,27 +111,38 @@ button span:hover {
   flex-wrap: wrap;
 }
 
-.image-gallery .info, .image-gallery .info-img {
-  width: calc(50% - 24px);
-  padding-bottom: 4px;
+.image-gallery .info {
+  width: 100%;
+  padding-bottom: 24px;
 }
 
-.image-gallery .info {
-  margin-right: 48px;
-}
 
 .image-gallery .info p {
   line-height: 1.6;
-  width: 100%;
+  width: calc(50% - 24px);
   word-break: keep-all;
 }
 
 .image-gallery .info p:not(:first-child) {
-  text-indent: 64px;
+  text-indent: 32px;
+}
+
+.image-gallery .info-img {
+  width: calc(50% - 24px);
+  padding: 8px 0 0 0;
+  line-height: 1;
 }
 
 .image-gallery .info-img img{
   width: 100%;
+}
+
+#info-img-1, #info-img-2 {
+  padding: 24px 0;
+}
+
+#info-img-2 img {
+  width: 50%;
 }
 
 .img-desc-c {
@@ -202,19 +212,21 @@ button span:hover {
 }
 
 .item-detail {
-  padding-left: 24px;
+  padding-inline-start: 20px;
   margin: 8px 0 0 0;
+  list-style-type: disc;
 }
 
 .item-detail li {
-  padding-left: 24px;
   line-height: 1.4;
 }
 
+/*
 .item-detail li::marker {
   content: "*";
   font-size: 1em;;
-}
+}*/
+
 
 #gallery-1, #gallery-2 {
   gap: 24px;
@@ -268,13 +280,18 @@ button span:hover {
     width: 220px;
   }
 
+  
   #src-kream {
     right: 8px;
   }
 
   .main-desc {
-    column-count: 1;
+    width: 100%;
     padding: 64px 8px 48px 8px;
+  }
+
+  .image-gallery {
+    width: 100%;
   }
 
   .image-gallery .info p {
@@ -285,12 +302,9 @@ button span:hover {
     text-indent: 24px;
   }
 
-  .image-gallery .info {
-    margin-right: 24px;
-  }
 
   .image-gallery .info, .image-gallery .info-img {
-    width: calc(50% - 12px);
+    width: 100%;
   }
 
   .indent {
@@ -330,10 +344,6 @@ button span:hover {
     padding: 48px 8px;
     }
 
-  .image-gallery .info {
-    padding-bottom: 8px;
-  }
-
   .img-desc {
     width: 50%;
     display: flex;
@@ -344,6 +354,11 @@ button span:hover {
   .img-desc-c {
     width: 100%;
     padding: 8px 0 0 0;
+  }
+
+  .archive-campaign {
+    width: 100%;
+    justify-content: center;
   }
 
   #gallery-3 img {
