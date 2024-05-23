@@ -108,22 +108,31 @@ button span:hover {
 .image-gallery {
   padding: 48px 24px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start4;
   flex-wrap: wrap;
 }
 
+.image-gallery .info, .image-gallery .info-img {
+  width: calc(50% - 24px);
+  padding-bottom: 4px;
+}
+
 .image-gallery .info {
-  padding-bottom: 24px;
+  margin-right: 48px;
 }
 
 .image-gallery .info p {
   line-height: 1.6;
-  width: calc(50% - 24px);
+  width: 100%;
   word-break: keep-all;
 }
 
 .image-gallery .info p:not(:first-child) {
   text-indent: 64px;
+}
+
+.image-gallery .info-img img{
+  width: 100%;
 }
 
 .img-desc-c {
@@ -150,13 +159,81 @@ button span:hover {
   width: auto;
 }
 
+.item-container {
+  padding: 8px 0;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 12px);
+  border-top: 1px solid #000;
+}
+
+.item-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.item-img-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 8px;
+}
+
+.item-img-main img {
+  background-color: #e9e9e9;
+  width: 40%;
+}
+
+.item-img-add img {
+  width: 66%;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info .title {
+  margin-top: 8px;
+  color: #3a5b9b;
+}
+
+.item-detail {
+  padding-left: 24px;
+  margin: 8px 0 0 0;
+}
+
+.item-detail li {
+  padding-left: 24px;
+}
+
+.item-detail li::marker {
+  content: "*";
+  font-size: 1em;;
+}
+
+#gallery-1, #gallery-2 {
+  gap: 24px;
+}
+
 #gallery-1, #gallery-2, #gallery-3 {
-  justify-content: center;
   padding-bottom: 128px;
 }
 
-#gallery-1 img, #gallery-2 img, #gallery-3 img {
-  width: 50%;
+.archive {
+  padding: 48px 24px;
+  justify-content: flex-start !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.archive img {
+  width: calc(50% - 4px);
 }
 
 #footer {
@@ -200,6 +277,14 @@ button span:hover {
     text-indent: 24px;
   }
 
+  .image-gallery .info {
+    margin-right: 24px;
+  }
+
+  .image-gallery .info, .image-gallery .info-img {
+    width: calc(50% - 12px);
+  }
+
   .indent {
     text-indent: 0;
   }
@@ -225,6 +310,14 @@ button span:hover {
     gap: 24px;
   }
 
+  .item-container {
+    width: 100%;
+  }
+
+  #gallery-1, #gallery-2 {
+    gap: 8px;
+  }
+
   .image-gallery {
     padding: 48px 8px;
     }
@@ -245,7 +338,7 @@ button span:hover {
     padding: 8px 0 0 0;
   }
 
-  #gallery-1 img, #gallery-2 img, #gallery-3 img {
+  #gallery-3 img {
     width: 100%;
   }
 
