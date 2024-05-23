@@ -244,7 +244,7 @@ button span:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(50% - 24px);
+  width: calc(50% - 6px);
   /*border-top: 1px solid #000;*/
 }
 
@@ -353,12 +353,16 @@ button span:hover {
           align-items: flex-end;
 }
 
-.archive {
-  padding: 48px 24px;
+.campaign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  flex-direction: column;
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
           justify-content: flex-start !important;
@@ -370,8 +374,29 @@ button span:hover {
           align-items: flex-end;
 }
 
-.archive-campaign {
-  width: calc(50% - 24px);
+.archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  flex-direction: column;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.campaign-title, .archive-title {
+  width: calc(50% - 6px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,8 +405,8 @@ button span:hover {
           justify-content: flex-start;
 }
 
-.archive img {
-  width: calc(50% - 24px);
+.campaign img, .archive img {
+  width: calc(50% - 6px);
 }
 
 #footer {
@@ -481,10 +506,17 @@ button span:hover {
   .item-img-add {
     gap: 4px;
   }
+  .archive-title {
+    padding-top: 24px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .triplet img {
     width: calc(33.3333333333% - 3px);
   }
-  .archive-campaign {
+  .campaign-title {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

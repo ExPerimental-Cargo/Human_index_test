@@ -185,7 +185,7 @@ button span:hover {
   margin: 8px 0;
   display: flex;
   flex-direction: column;
-  width: calc(50% - 24px);
+  width: calc(50% - 6px);
   /*border-top: 1px solid #000;*/
 }
 
@@ -270,8 +270,10 @@ button span:hover {
   align-items: flex-end;
 }
 
-.archive {
-  padding: 48px 24px;
+.campaign {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start !important;
   flex-wrap: wrap;
@@ -279,14 +281,26 @@ button span:hover {
   align-items: flex-end;
 }
 
-.archive-campaign {
-  width: calc(50% - 24px);
+.archive {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+
+.campaign-title, .archive-title {
+  width: calc(50% - 6px);
   display: flex;
   justify-content: flex-start;
 }
 
-.archive img {
-  width: calc(50% - 24px);
+.campaign img, .archive img {
+  width: calc(50% - 6px);
 }
 
 #footer {
@@ -393,11 +407,17 @@ button span:hover {
     gap: 4px;
   }
 
+  .archive-title {
+    padding-top: 24px;
+    width: 100%;
+    justify-content: center;
+  }
+
   .triplet img {
     width: calc(100% / 3 - 3px);
   }
 
-  .archive-campaign {
+  .campaign-title {
     width: 100%;
     justify-content: center;
   }
