@@ -17,7 +17,7 @@ button span:hover {
 }
 
 #header {
-  height: 48px;
+  height: 64px;
   padding: 24px 24px 0 24px;
   width: 100%;
   display: flex;
@@ -215,7 +215,7 @@ button span:hover {
 }
 
 .item-img-add img {
-  width: 60%;
+  width: 85%;
 }
 
 .twice img {
@@ -360,7 +360,7 @@ button span:hover {
   .list-wrapper {
     position: relative;
     padding: 0;
-    left: 8px;
+    /*left: 8px;*/
   }
 
   .list-number, .list-item{
@@ -427,11 +427,12 @@ button span:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 8px;
+    /*left: 8px;*/
   }
 
   #footer a img {
     width: 15vw;
   }
+  
 
 }
