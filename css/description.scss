@@ -108,7 +108,7 @@ button span:hover {
 .image-gallery {
   padding: 48px 24px;
   justify-content: flex-start;
-  align-items: flex-start4;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -165,7 +165,7 @@ button span:hover {
   display: flex;
   flex-direction: column;
   width: calc(50% - 12px);
-  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
 }
 
 .item-img {
@@ -208,6 +208,7 @@ button span:hover {
 
 .item-detail li {
   padding-left: 24px;
+  line-height: 1.4;
 }
 
 .item-detail li::marker {
@@ -217,10 +218,11 @@ button span:hover {
 
 #gallery-1, #gallery-2 {
   gap: 24px;
+  flex-direction: column;
 }
 
-#gallery-1, #gallery-2, #gallery-3 {
-  padding-bottom: 128px;
+#gallery-2 {
+  align-items: flex-end;
 }
 
 .archive {
@@ -232,6 +234,11 @@ button span:hover {
   align-items: flex-end;
 }
 
+.archive-campaign {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .archive img {
   width: calc(50% - 4px);
 }
