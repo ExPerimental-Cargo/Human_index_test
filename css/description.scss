@@ -17,11 +17,13 @@ button span:hover {
 }
 
 #header {
+  height: 48px;
   padding: 24px 24px 0 24px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   position: fixed;
+  align-items: center;
 }
 
 #header img {
@@ -33,8 +35,17 @@ button span:hover {
 #src-kream {
   position: fixed;
   display: flex;
-  background-color: #fff;
   right: 24px;
+}
+
+#shop-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  background-image: url(/img/03.png);
+  background-size: cover;
 }
 
 ::selection {
@@ -197,13 +208,30 @@ button span:hover {
   width: 40%;
 }
 
+.item-img-add {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
 .item-img-add img {
-  width: 66%;
+  width: 60%;
+}
+
+.twice img {
+  width: 45%;
+
+}
+
+
+.triplet img {
+  width: calc(100% / 3 - 6px);
 }
 
 .item-info {
   display: flex;
   flex-direction: column;
+  word-break: keep-all;
 }
 
 .item-info .title {
@@ -212,13 +240,18 @@ button span:hover {
 }
 
 .item-detail {
-  padding-inline-start: 20px;
+  padding: 0;
   margin: 8px 0 0 0;
-  list-style-type: disc;
+  list-style: none;
 }
 
 .item-detail li {
+  border-top: 1px solid #000;
   line-height: 1.4;
+  width: auto;
+}
+.item-detail li:last-child {
+  border-bottom: 1px solid #000;
 }
 
 /*
@@ -354,6 +387,14 @@ button span:hover {
   .img-desc-c {
     width: 100%;
     padding: 8px 0 0 0;
+  }
+
+  .item-img-add {
+    gap: 4px;
+  }
+
+  .triplet img {
+    width: calc(100% / 3 - 3px);
   }
 
   .archive-campaign {

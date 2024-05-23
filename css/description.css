@@ -20,6 +20,7 @@ button span:hover {
 }
 
 #header {
+  height: 48px;
   padding: 24px 24px 0 24px;
   width: 100%;
   display: -webkit-box;
@@ -29,6 +30,9 @@ button span:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header img {
@@ -42,8 +46,23 @@ button span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #fff;
   right: 24px;
+}
+
+#shop-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 48px;
+  background-image: url(/img/03.png);
+  background-size: cover;
 }
 
 ::-moz-selection {
@@ -260,8 +279,27 @@ button span:hover {
   width: 40%;
 }
 
+.item-img-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+}
+
 .item-img-add img {
-  width: 66%;
+  width: 60%;
+}
+
+.twice img {
+  width: 45%;
+}
+
+.triplet img {
+  width: calc(33.3333333333% - 6px);
 }
 
 .item-info {
@@ -272,6 +310,7 @@ button span:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  word-break: keep-all;
 }
 
 .item-info .title {
@@ -280,14 +319,19 @@ button span:hover {
 }
 
 .item-detail {
-  -webkit-padding-start: 20px;
-          padding-inline-start: 20px;
+  padding: 0;
   margin: 8px 0 0 0;
-  list-style-type: disc;
+  list-style: none;
 }
 
 .item-detail li {
+  border-top: 1px solid #000;
   line-height: 1.4;
+  width: auto;
+}
+
+.item-detail li:last-child {
+  border-bottom: 1px solid #000;
 }
 
 /*
@@ -433,6 +477,12 @@ button span:hover {
   .img-desc-c {
     width: 100%;
     padding: 8px 0 0 0;
+  }
+  .item-img-add {
+    gap: 4px;
+  }
+  .triplet img {
+    width: calc(33.3333333333% - 3px);
   }
   .archive-campaign {
     width: 100%;

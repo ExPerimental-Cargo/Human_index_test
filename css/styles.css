@@ -161,7 +161,7 @@ body {
 
 @media all and (max-width: 720px) {
   html, body, p {
-    font-size: 14px;
+    font-size: 12px;
   }
   #header {
     padding: 24px;
