@@ -218,7 +218,7 @@ button span:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(50% - 12px);
+  width: calc(50% - 24px);
   /*border-top: 1px solid #000;*/
 }
 
@@ -303,12 +303,13 @@ button span:hover {
 
 .archive {
   padding: 48px 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
           justify-content: flex-start !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
@@ -318,17 +319,17 @@ button span:hover {
 }
 
 .archive-campaign {
-  width: 100%;
+  width: calc(50% - 24px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .archive img {
-  width: calc(50% - 4px);
+  width: calc(50% - 24px);
 }
 
 #footer {
