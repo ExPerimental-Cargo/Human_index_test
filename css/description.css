@@ -319,19 +319,14 @@ button span:hover {
 }
 
 .item-detail {
-  padding: 0;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
   margin: 8px 0 0 0;
-  list-style: none;
+  list-style: disc;
 }
 
 .item-detail li {
-  border-top: 1px solid #000;
   line-height: 1.4;
-  width: auto;
-}
-
-.item-detail li:last-child {
-  border-bottom: 1px solid #000;
 }
 
 /*
@@ -462,7 +457,9 @@ button span:hover {
     text-indent: 24px;
   }
   .list-wrapper {
+    position: relative;
     padding: 0;
+    left: 8px;
   }
   .list-number, .list-item {
     height: 32px;
@@ -532,6 +529,8 @@ button span:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: relative;
+    left: 8px;
   }
   #footer a img {
     width: 15vw;
