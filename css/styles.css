@@ -4,14 +4,28 @@ html, body, p {
   font-family: "minion-pro-caption", "agchoijeongho-screen", serif;
   font-weight: 400;
   font-style: normal;
-  color: #3a5b9b;
+  color: #000;
   line-height: 1.2;
   scrollbar-width: none;
 }
 
-/* body {
-  user-select: none;
-} */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a4a4a4;
+  text-decoration: underline;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #hint {
   width: 100%;
   padding: 24px 0;
@@ -22,16 +36,6 @@ html, body, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-::-moz-selection {
-  color: #fff;
-  background-color: #3a5b9b;
-}
-
-::selection {
-  color: #fff;
-  background-color: #3a5b9b;
 }
 
 #floatingImage {
@@ -121,6 +125,7 @@ html, body, p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 64px;
+  color: #3a5b9b;
 }
 
 .index-desc {
@@ -133,6 +138,7 @@ html, body, p {
           flex-direction: column;
   gap: 12px;
   width: 20vw;
+  color: #3a5b9b;
 }
 
 .desc-contents {
@@ -153,6 +159,9 @@ html, body, p {
 }
 
 @media all and (max-width: 720px) {
+  html, body, p {
+    font-size: 14px;
+  }
   #header {
     padding: 24px;
   }
@@ -198,7 +207,7 @@ html, body, p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     padding: 0 24px;
   }
   .comment-container {

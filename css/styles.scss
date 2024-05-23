@@ -4,15 +4,24 @@ html, body, p {
   font-family: "minion-pro-caption", "agchoijeongho-screen", serif;
   font-weight: 400;
   font-style: normal;
-  color: #3a5b9b;
+  color: #000;
   line-height: 1.2;
   scrollbar-width: none;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
 
-/* body {
+a:hover {
+  color: #a4a4a4;
+  text-decoration: underline;
+}
+
+body {
   user-select: none;
-} */
+}
 
 
 #hint {
@@ -23,11 +32,6 @@ html, body, p {
   justify-content: center;
 }
 
-
-::selection {
-  color: #fff;
-  background-color: #3a5b9b;
-}
 
 #floatingImage {
   position: fixed;
@@ -89,6 +93,7 @@ html, body, p {
   display: flex;
   flex-direction: column;
   padding-bottom: 64px;
+  color: #3a5b9b;
 }
 
 .index-desc {
@@ -96,6 +101,7 @@ html, body, p {
   flex-direction: column;
   gap: 12px;
   width: 20vw;
+  color: #3a5b9b;
 }
 
 .desc-contents {
@@ -113,6 +119,10 @@ html, body, p {
 
 @media all and (max-width:720px) {
   
+  html, body, p {
+    font-size: 14px;
+  }
+
   #header {
     padding: 24px;
   }
@@ -154,7 +164,7 @@ html, body, p {
 
   .desc-contents {
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     padding: 0 24px;
   }
 
